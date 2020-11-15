@@ -1018,7 +1018,7 @@ def _reduce_to_stack(schedule):
         # Check if the action is a Delay()
         if re.search(r'\bDelay\b', str(action)):
             continue
-        # Check if the action is a ShiftPhase()
+        # Check if the is a ShiftPhase()
         elif re.search(r'\bShiftPhase\b', str(action)):
             phase = re.findall(r'\((\d+)', str(action)) # Find the phase
             if int(phase[0])!=0:
